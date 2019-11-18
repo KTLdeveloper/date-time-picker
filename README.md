@@ -1,4 +1,4 @@
-# data-time-picker
+# date-time-picker
 
 ## Project setup
 ```

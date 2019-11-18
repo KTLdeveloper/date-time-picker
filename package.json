@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "storybook": "start-storybook -p 9001"
+    "serve:storybook": "start-storybook -p 9001 -c storybook"
   },
   "dependencies": {
     "core-js": "^3.3.2",
@@ -25,7 +25,9 @@
     "eslint": "^5.16.0",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.13.0",
     "prettier": "^1.18.2",
+    "sass-loader": "^8.0.0",
     "vue-loader": "^15.7.2",
     "vue-template-compiler": "^2.6.10"
   },
@@ -39,8 +41,8 @@
       "@vue/prettier"
     ],
     "rules": {
-      "no-console": " process.env.NODE_ENV === \"production\" ? \"error\" : \"off\" ",
-      "no-debugger":" process.env.NODE_ENV === \"production\" ? \"error\" : \"off\" "
+      "no-console": "off",
+      "no-debugger": "off"
     },
     "parserOptions": {
       "parser": "babel-eslint"
